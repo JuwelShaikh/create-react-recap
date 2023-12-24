@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 const Contents = (props) => {
-    const [price, setPrice] = useState(props.price)
+    const [price, setPrice] = useState(10000)
     const bidPrice = () => {
-        const newPrice = price * 2;
+        const newPrice = price*2;
         setPrice(newPrice);
-
-        const biddingStyle ={
-            backgroundColor: 'pest',
-            borderRadius: '50%'
-        }
     }
     const contentStyle = {
         backgroundColor: 'lightblue',
-        padding: '2px',
+        padding: '10px',
         borderRadius: '10px'
     }
     return (
@@ -21,8 +16,8 @@ const Contents = (props) => {
             <h1>Some Contents</h1>
             <div style={contentStyle}>
                 <h3>Product Name: {props.name}</h3>
-                <p>Price: {props.price}</p>
-                <button> Bid the price</button>
+                <p>Price: {price}</p>
+                <button onClick={bidPrice}>Bid the price</button>
             </div>
         </div>
     );

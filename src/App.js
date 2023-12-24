@@ -5,7 +5,7 @@ import Contents from './Components/Contents';
 function App() {
   return (
     <div className="App">
-      <Contents name='iPhone 15pro max' price='2000'></Contents>
+      <Contents name='iPhone 15pro max' price='10000'></Contents>
     </div>
   );
 }
