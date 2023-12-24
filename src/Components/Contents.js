@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contens = () => {
+const Contents = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Contens = () => {
     );
 };
 
-export default Contens;
+export default Contents;
