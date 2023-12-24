@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react';
 const Contents = (props) => {
     const [price, setPrice] = useState(10000)
     const bidPrice = () => {
-        const newPrice = price*2;
+        const newPrice = price * 2;
         setPrice(newPrice);
     }
+    
     const contentStyle = {
         backgroundColor: 'lightblue',
         padding: '10px',
