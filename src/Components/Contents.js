@@ -5,6 +5,11 @@ const Contents = (props) => {
     const bidPrice = () => {
         const newPrice = price * 2;
         setPrice(newPrice);
+
+        const biddingStyle ={
+            backgroundColor: 'pest',
+            borderRadius: '50%'
+        }
     }
     const contentStyle = {
         backgroundColor: 'lightblue',
@@ -17,7 +22,7 @@ const Contents = (props) => {
             <div style={contentStyle}>
                 <h3>Product Name: {props.name}</h3>
                 <p>Price: {props.price}</p>
-                <button>Bid the price</button>
+                <button> Bid the price</button>
             </div>
         </div>
     );
